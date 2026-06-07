@@ -1,0 +1,39 @@
+window {
+  background: rgba(16, 14, 22, 0.93);
+  border: 1px solid rgba(224, 179, 65, 0.55);
+  border-radius: 8px;
+  font-family: "JetBrains Mono", "Noto Sans", sans-serif;
+  font-size: 13px;
+}
+
+#input {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  min-height: 0;
+  font-size: 1px;
+  color: transparent;
+}
+
+#outer-box {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+#list {
+  background: transparent;
+}
+
+#entry {
+  background: transparent;
+  color: #c0c0c0;
+  padding: 8px 14px;
+  border: none;
+}
+
+#entry:selected {
+  background: rgba(156, 204, 101, 0.12);
+  color: #9ccc65;
+}
