@@ -54,6 +54,58 @@ window#waybar {
   -gtk-icon-effect: highlight;
 }
 
+#network {
+  padding: 0 8px;
+}
+
+#network.disconnected {
+  color: #5a5470;
+}
+
+#network.ethernet {
+  color: #9ccc65;
+}
+
+#custom-bluetooth {
+  padding: 0 8px;
+}
+
+#custom-bluetooth.on {
+  color: #c0c0c0;
+}
+
+#custom-bluetooth.connected {
+  color: #9ccc65;
+}
+
+#custom-vpn {
+  padding: 0 8px;
+}
+
+#custom-vpn.connected {
+  color: #9ccc65;
+}
+
+#battery {
+  padding: 0 8px;
+}
+
+#battery.good {
+  color: #9ccc65;
+}
+
+#battery.warning {
+  color: #e0b341;
+}
+
+#battery.critical {
+  color: #f44336;
+}
+
+#battery.charging {
+  color: #9ccc65;
+}
+
 #custom-power {
   color: #e0b341;
   padding: 0 10px;

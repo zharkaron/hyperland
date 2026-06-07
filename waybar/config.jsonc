@@ -5,7 +5,7 @@
   "spacing": 8,
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["tray", "pulseaudio", "custom/power"],
+  "modules-right": ["tray", "pulseaudio", "network", "custom/bluetooth", "custom/vpn", "battery", "custom/power"],
 
   "hyprland/workspaces": {
     "format": "{name}",
@@ -35,6 +35,39 @@
   "tray": {
     "icon-size": 16,
     "spacing": 6
+  },
+
+  "network": {
+    "format": "",
+    "format-ethernet": "",
+    "format-disconnected": "",
+    "tooltip": true
+  },
+
+  "custom/bluetooth": {
+    "exec": "/home/zharkaron/Projects/hyperland/waybar/bluetooth-status.sh",
+    "exec-if": "/home/zharkaron/Projects/hyperland/waybar/bluetooth-status.sh --check",
+    "format": "{}",
+    "return-type": "json",
+    "tooltip": true,
+    "interval": 2
+  },
+
+  "custom/vpn": {
+    "exec": "/home/zharkaron/Projects/hyperland/waybar/vpn-status.sh",
+    "exec-if": "/home/zharkaron/Projects/hyperland/waybar/vpn-status.sh --check",
+    "format": "{}",
+    "return-type": "json",
+    "tooltip": true,
+    "interval": 15
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "format-charging": " {capacity}%",
+    "format-full": " {capacity}%",
+    "tooltip": true
   },
 
   "custom/power": {
