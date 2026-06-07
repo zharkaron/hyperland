@@ -42,6 +42,30 @@ window#waybar {
   color: #5a5470;
 }
 
+#custom-usage {
+  padding: 0 8px;
+}
+
+#custom-usage.low {
+  color: #9ccc65;
+}
+
+#custom-usage.medium {
+  color: #e0b341;
+}
+
+#custom-usage.high {
+  color: #f44336;
+}
+
+#mpris {
+  padding: 0 8px;
+}
+
+#mpris.paused {
+  color: #5a5470;
+}
+
 #tray {
   padding: 0 6px;
 }

@@ -5,7 +5,7 @@
   "spacing": 8,
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["tray", "pulseaudio", "network", "custom/bluetooth", "custom/vpn", "battery", "custom/power"],
+  "modules-right": ["tray", "pulseaudio", "custom/usage", "mpris", "network", "custom/bluetooth", "custom/vpn", "battery", "custom/power"],
 
   "hyprland/workspaces": {
     "format": "{name}",
@@ -35,6 +35,28 @@
   "tray": {
     "icon-size": 16,
     "spacing": 6
+  },
+
+  "custom/usage": {
+    "exec": "/home/zharkaron/Projects/hyperland/waybar/usage-status.sh",
+    "format": "{}",
+    "return-type": "json",
+    "on-click": "/home/zharkaron/Projects/hyperland/waybar/usage-popup.sh",
+    "tooltip": true,
+    "interval": 3
+  },
+
+  "mpris": {
+    "format": "{player_icon} {title}",
+    "format-paused": " {title}",
+    "player-icons": {
+      "spotify": "",
+      "firefox": "",
+      "chromium": "",
+      "vlc": "嗢",
+      "default": ""
+    },
+    "tooltip": true
   },
 
   "network": {
