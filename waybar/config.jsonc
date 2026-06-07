@@ -21,7 +21,8 @@
 
   "clock": {
     "format": "{:%a %b %d %Y  %H:%M}",
-    "tooltip-format": "{:%A, %B %d %Y}"
+    "tooltip-format": "{:%A, %B %d %Y}",
+    "on-click": "/home/zharkaron/Projects/hyperland/waybar/calendar-popup.sh"
   },
 
   "pulseaudio": {
