@@ -28,6 +28,16 @@ window#waybar {
   color: #e0b341;
 }
 
+#custom-services {
+  color: #c0c0c0;
+  padding: 0 4px;
+}
+
+#custom-sysservices {
+  color: #9ccc65;
+  padding: 0 6px;
+}
+
 #clock {
   color: #9ccc65;
   padding: 0 10px;

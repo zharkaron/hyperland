@@ -3,20 +3,39 @@
   "position": "top",
   "height": 32,
   "spacing": 8,
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["hyprland/workspaces", "custom/services", "custom/sysservices"],
   "modules-center": ["clock"],
   "modules-right": ["tray", "pulseaudio", "custom/usage", "mpris", "network", "custom/bluetooth", "custom/vpn", "battery", "custom/power"],
 
   "hyprland/workspaces": {
     "format": "{name}",
+    "all-outputs": true,
     "sort-by": "name",
     "on-scroll": false,
     "persistent_workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": []
+      "1": ["eDP-1"],
+      "2": ["eDP-1"],
+      "3": ["eDP-1"],
+      "4": ["eDP-1"],
+      "5": ["eDP-1"]
     }
+  },
+
+  "custom/services": {
+    "exec": "/home/zharkaron/Projects/hyperland/waybar/services-status.sh",
+    "format": "{}",
+    "return-type": "json",
+    "tooltip": false,
+    "interval": 1
+  },
+
+  "custom/sysservices": {
+    "exec": "/home/zharkaron/Projects/hyperland/waybar/sysservices-status.sh",
+    "format": "{}",
+    "return-type": "json",
+    "on-click": "/home/zharkaron/Projects/hyperland/waybar/services-popup.sh",
+    "tooltip": true,
+    "interval": 5
   },
 
   "clock": {
